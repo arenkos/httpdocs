@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>OBS Studio Yayını</title>
+</head>
+<body>
+<video id="obsVideo" controls autoplay width="640" height="360"></video>
+
+<script>
+// Video elementini seç
+let videoElement = document.getElementById('obsVideo');
+
+// OBS Studio yayını için URL
+let streamUrl = "http://93.89.225.182:21";
+
+// Video elementine yayını yükle
+videoElement.src = streamUrl + "/test.flv"; // test.flv OBS Studio'da belirtilen akış adı
+</script>
+</body>
+</html>

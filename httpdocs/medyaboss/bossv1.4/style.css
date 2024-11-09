@@ -1,0 +1,748 @@
+#kayan-yazi {
+  height: 30px;
+  overflow: hidden;
+}
+
+#kayan-yazi table {
+  animation: kayan-yazi 10s linear infinite;
+}
+
+@keyframes kayan-yazi {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(-100%);
+  }
+}
+
+/* Genel stiller */
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	text-align:center;
+}
+
+body {
+	font-family: Poppins, sans-serif;
+	font-size: 16px;
+	line-height: 1.5;
+	color: #333;
+	background-color: #f2f2f2;
+}
+
+.container {
+	width: 100%;
+	margin: 0 auto;
+	padding: 0 20px;
+}
+
+/* Header stilleri */
+header {
+	background-color: #fff;
+	box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+	width: 100%;
+}
+
+header h1 {
+	font-size: 2.5rem;
+	padding: 20px;
+	text-align: center;
+	color: #333;
+}
+
+nav {
+	margin-top: 10px;
+	text-align: center;
+}
+
+nav ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+nav ul li {
+	display: inline-block;
+	margin-right: 10px;
+}
+
+nav ul li a {
+	display: block;
+	padding: 10px;
+	color: #333;
+	background-color: #FFFFFF; 
+}
+
+nav ul li a:hover {
+	background-color: #333;
+	color: #fff;
+}
+
+#menu {
+  display: none;
+  position: absolute;
+  text-align:center;
+  top: 130px;
+  left: 165px;
+  width: auto;
+  height: auto;
+  background-color: #CD0000;
+  box-shadow: 0 2px 2px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+#menu ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+#menu li {
+  border-bottom: 1px solid #ccc;
+}
+
+#menu li:last-child {
+  border-bottom: none;
+}
+
+#menu li a {
+  display: block;
+  padding: 10px;
+  text-decoration: none;
+  color: #fff;
+  background-color: #CD0000;
+}
+
+#menu li a:hover {
+  background-color: #CD0000;
+   text-decoration: underline;
+}
+
+.menu-toggle {
+  display: block;
+  position: relative;
+  cursor: pointer;
+}
+
+.menu-toggle:hover {
+  opacity: 0.7;
+}
+
+ /* arkaplan */
+#arkaPlan {
+	display: none;
+	position: fixed;
+	z-index: 1;
+	padding-top: 100px;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	overflow: auto;
+	background-color: rgba(0,0,0,0.4);
+}
+
+#arkaPlan2 {
+	display: none;
+	position: fixed;
+	z-index: 1;
+	padding-top: 100px;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	overflow: auto;
+	background-color: rgba(0,0,0,0.4);
+}
+
+#arkaPlan3 {
+	display: none;
+	position: fixed;
+	z-index: 1;
+	padding-top: 100px;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	overflow: auto;
+	background-color: rgba(0,0,0,0.4);
+}
+
+/* kutu */
+#kutu {
+	background-color: #f1f1f1;
+	margin: auto;
+	padding: 20px;
+	border: 1px solid #888;
+	width: 80%;
+	max-width: 700px;
+	position: relative;
+}
+
+/* kapat butonu */
+.kapat {
+	position: absolute;
+	top: 0;
+	right: 20px;
+	font-size: 28px;
+	font-weight: bold;
+	cursor: pointer;
+}
+
+/* kapat butonu */
+.kapat2 {
+	position: absolute;
+	top: 0;
+	right: 20px;
+	font-size: 28px;
+	font-weight: bold;
+	cursor: pointer;
+	color: #fff;
+}
+
+.borsa-widget-top a:link {
+text-decoration: none;
+}
+.borsa-widget-top {
+position: relative;
+background-color: #fff;
+}
+.borsa-widget-top:after {
+content: "";
+position: absolute;
+top: 0;
+left: 0;
+width: 100%;
+height: 100%;
+}
+.borsa-widget-top .borsa-widget-wrapper {
+position: relative;
+z-index: 1;
+height: 35px;
+width: 100%;
+max-width: 1010px;
+min-width: 1010px;
+/*1495*/
+margin: 0;
+padding: 0px 10px;
+display: flex;
+align-items: center;
+justify-content: space-between;
+}
+@media (min-width: 1495px) {
+.borsa-widget-top .borsa-widget-wrapper {
+  max-width: 1170px;
+  min-width: 1170px;
+}
+}
+@media (min-width: 1250px) {
+.borsa-widget-top .borsa-widget-wrapper {
+  margin: 0 auto;
+}
+}
+.borsa-widget-top .borsa-widget-wrapper .right {
+width: 100%;
+display: flex;
+justify-content: flex-end;
+}
+.borsa-widget-top .borsa-widget-wrapper .right .borsa-widget-group {
+width: 100%;
+display: flex;
+justify-content: space-between;
+}
+.borsa-widget-top .borsa-widget-wrapper .right .borsa-widget-group a {
+display: flex;
+align-items: center;
+height: 30px;
+font-family:Poppins;
+font-size: 15px;
+padding: 0px 5px;
+}
+.borsa-widget-top
+.borsa-widget-wrapper
+.right
+.borsa-widget-group
+a.up
+.rate {
+color: #39b54a;
+}
+.borsa-widget-top
+.borsa-widget-wrapper
+.right
+.borsa-widget-group
+a.down
+.rate {
+color: #ec1c24;
+}
+.borsa-widget-top
+.borsa-widget-wrapper
+.right
+.borsa-widget-group
+a.notr
+.rate {
+color: #666;
+}
+.borsa-widget-top
+.borsa-widget-wrapper
+.right
+.borsa-widget-group
+a
+.name {
+position: relative;
+margin-right: 4px;
+font-weight: bold;
+padding-left: 15px;
+color: #333;
+line-height: 30px;
+}
+.borsa-widget-top
+.borsa-widget-wrapper
+.right
+.borsa-widget-group
+a
+.PercentChange {
+color: #333;
+font-weight: bold;
+}
+.borsa-widget-top
+.borsa-widget-wrapper
+.right
+.borsa-widget-group
+a
+.rate {
+margin-right: 4px;
+font-weight: bold;
+}
+.borsa-widget-top
+.borsa-widget-wrapper
+.right
+.borsa-widget-group
+a:last-child {
+display: flex;
+align-items: center;
+justify-content: center;
+}
+.borsa-widget-top
+.borsa-widget-wrapper
+.right
+.borsa-widget-group
+a:last-child
+span {
+color: #333;
+}
+.borsa-widget-top
+.borsa-widget-wrapper
+.right
+.borsa-widget-group
+a:last-child
+.name {
+padding: 0;
+}
+.borsa-widget-top
+.borsa-widget-wrapper
+.right
+.borsa-widget-group
+a
+.name
+i.fa-caret-up {
+font-size: 25px;
+color: #39b54a;
+}
+.borsa-widget-top
+.borsa-widget-wrapper
+.right
+.borsa-widget-group
+a
+.name
+i.fa-caret-down {
+font-size: 25px;
+color: #ec1c24;
+}
+.borsa-widget-top
+.borsa-widget-wrapper
+.right
+.borsa-widget-group
+a.change {
+animation: dynamic-light 1s infinite;
+}
+@keyframes dynamic-light {
+0% {
+  background-color: rgb(181, 181, 181);
+}
+50% {
+  background-color: rgb(255, 255, 255);
+}
+100% {
+  background-color: rgb(181, 181, 181);
+}
+}
+.borsa-widget-top
+.borsa-widget-wrapper
+.right
+.borsa-widget-group
+a.live-su-endeks
+.rate-icon {
+padding-bottom: 3px;
+}
+.borsa-widget-top
+.borsa-widget-wrapper
+.right
+.borsa-widget-group
+a.live-su-endeks
+.rate-icon
+img {
+display: block;
+width: auto;
+height: 22px;
+}
+.borsa-widget-top
+.borsa-widget-wrapper
+.right
+.borsa-widget-group
+a.live-su-endeks
+.su-value {
+color: #02bc33;
+font-weight: bold;
+padding-top: 3px;
+}
+
+
+.radio-group {
+display: flex;
+flex-wrap: wrap;
+margin: -2px;
+}
+.radio-group label {
+margin: 2px;
+}
+.radio-group input[type="radio"] + label::before {
+background-color: white;
+border-color: #3C3C3B;
+}
+.radio-group input[type="radio"]:hover + label::before {
+background-color: #3C3C3B;
+}
+.radio-group input[type="radio"]:checked + label::before {
+background-color: #3C3C3B;
+}
+/* Main stilleri */
+.main-content {
+display: flex;
+flex-wrap: wrap;
+}
+
+.main-content__left {
+flex: 3;
+padding-right: 20px;
+}
+
+.main-content__right {
+flex: 1;
+}
+
+.slideshow-container {
+position: relative;
+margin-bottom: 20px;
+}
+
+.slideshow-container img {
+width: 100%;
+height: auto;
+}
+
+.slideshow-container .caption {
+position: absolute;
+bottom: 0;
+left: 0;
+right: 0;
+padding: 10px;
+background-color: rgba(0, 0, 0, 0.5);
+color: #fff;
+font-size: 1.5rem;
+text-align: center;
+}
+
+.haber-listesi {
+list-style: none;
+margin-bottom: 20px;
+}
+
+.haber-listesi li {
+margin-bottom: 10px;
+border-bottom: 1px solid #ccc;
+padding-bottom: 10px;
+}
+
+.haber-listesi li:last-child {
+border-bottom: none;
+padding-bottom: 0;
+margin-bottom: 0;
+}
+
+.haber-listesi h2 {
+font-size: 1.5rem;
+margin-bottom: 10px;
+color: #333;
+}
+
+.haber-listesi p {
+font-size: 1rem;
+color: #666;
+}
+
+.reklam-alani {
+background-color: #fff;
+box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+margin-bottom: 20px;
+padding: 10px;
+text-align: center;
+}
+
+.reklam-alani img {
+max-width: 100%;
+height: auto;
+}
+
+/* Footer stilleri */
+footer {
+background-color: #333;
+color: #fff;
+padding: 20px;
+text-align: center;
+}
+
+footer p {
+font-size: 0.9rem;
+margin: 0;
+}
+
+footer a {
+color: #fff;
+}
+.borsa-widget-top a:link {
+	text-decoration: none;
+  }
+  .borsa-widget-top {
+	position: relative;
+	background-color: #fff;
+  }
+  .borsa-widget-top:after {
+	content: "";
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+  }
+  .borsa-widget-top .borsa-widget-wrapper {
+	position: relative;
+	z-index: 1;
+	height: 35px;
+	width: 100%;
+	max-width: 1010px;
+	min-width: 1010px;
+	/*1495*/
+	margin: 0;
+	padding: 0px 10px;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+  }
+  @media (min-width: 1495px) {
+	.borsa-widget-top .borsa-widget-wrapper {
+	  max-width: 1170px;
+	  min-width: 1170px;
+	}
+  }
+  @media (min-width: 1250px) {
+	.borsa-widget-top .borsa-widget-wrapper {
+	  margin: 0 auto;
+	}
+  }
+  .borsa-widget-top .borsa-widget-wrapper .right {
+	width: 100%;
+	display: flex;
+	justify-content: flex-end;
+  }
+  .borsa-widget-top .borsa-widget-wrapper .right .borsa-widget-group {
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+  }
+  .borsa-widget-top .borsa-widget-wrapper .right .borsa-widget-group a {
+	display: flex;
+	align-items: center;
+	height: 30px;
+	font-family:Poppins;
+	font-size: 15px;
+	padding: 0px 5px;
+  }
+  .borsa-widget-top
+	.borsa-widget-wrapper
+	.right
+	.borsa-widget-group
+	a.up
+	.rate {
+	color: #39b54a;
+  }
+  .borsa-widget-top
+	.borsa-widget-wrapper
+	.right
+	.borsa-widget-group
+	a.down
+	.rate {
+	color: #ec1c24;
+  }
+  .borsa-widget-top
+	.borsa-widget-wrapper
+	.right
+	.borsa-widget-group
+	a.notr
+	.rate {
+	color: #666;
+  }
+  .borsa-widget-top
+	.borsa-widget-wrapper
+	.right
+	.borsa-widget-group
+	a
+	.name {
+	position: relative;
+	margin-right: 4px;
+	font-weight: bold;
+	padding-left: 15px;
+	color: #333;
+	line-height: 30px;
+  }
+  .borsa-widget-top
+	.borsa-widget-wrapper
+	.right
+	.borsa-widget-group
+	a
+	.PercentChange {
+	color: #333;
+	font-weight: bold;
+  }
+  .borsa-widget-top
+	.borsa-widget-wrapper
+	.right
+	.borsa-widget-group
+	a
+	.rate {
+	margin-right: 4px;
+	font-weight: bold;
+  }
+  .borsa-widget-top
+	.borsa-widget-wrapper
+	.right
+	.borsa-widget-group
+	a:last-child {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+  }
+  .borsa-widget-top
+	.borsa-widget-wrapper
+	.right
+	.borsa-widget-group
+	a:last-child
+	span {
+	color: #333;
+  }
+  .borsa-widget-top
+	.borsa-widget-wrapper
+	.right
+	.borsa-widget-group
+	a:last-child
+	.name {
+	padding: 0;
+  }
+  .borsa-widget-top
+	.borsa-widget-wrapper
+	.right
+	.borsa-widget-group
+	a
+	.name
+	i.fa-caret-up {
+	font-size: 25px;
+	color: #39b54a;
+  }
+  .borsa-widget-top
+	.borsa-widget-wrapper
+	.right
+	.borsa-widget-group
+	a
+	.name
+	i.fa-caret-down {
+	font-size: 25px;
+	color: #ec1c24;
+  }
+  .borsa-widget-top
+	.borsa-widget-wrapper
+	.right
+	.borsa-widget-group
+	a.change {
+	animation: dynamic-light 1s infinite;
+  }
+  @keyframes dynamic-light {
+	0% {
+	  background-color: rgb(181, 181, 181);
+	}
+	50% {
+	  background-color: rgb(255, 255, 255);
+	}
+	100% {
+	  background-color: rgb(181, 181, 181);
+	}
+  }
+  .borsa-widget-top
+	.borsa-widget-wrapper
+	.right
+	.borsa-widget-group
+	a.live-su-endeks
+	.rate-icon {
+	padding-bottom: 3px;
+  }
+  .borsa-widget-top
+	.borsa-widget-wrapper
+	.right
+	.borsa-widget-group
+	a.live-su-endeks
+	.rate-icon
+	img {
+	display: block;
+	width: auto;
+	height: 22px;
+  }
+  .borsa-widget-top
+	.borsa-widget-wrapper
+	.right
+	.borsa-widget-group
+	a.live-su-endeks
+	.su-value {
+	color: #02bc33;
+	font-weight: bold;
+	padding-top: 3px;
+  }
+
+
+.radio-group {
+	display: flex;
+	flex-wrap: wrap;
+	margin: -2px;
+}
+.radio-group label {
+	margin: 2px;
+}
+.radio-group input[type="radio"] + label::before {
+	background-color: white;
+	border-color: #3C3C3B;
+}
+.radio-group input[type="radio"]:hover + label::before {
+	background-color: #3C3C3B;
+}
+.radio-group input[type="radio"]:checked + label::before {
+	background-color: #3C3C3B;
+}

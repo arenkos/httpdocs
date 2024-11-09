@@ -1,0 +1,30 @@
+/* Bağış Sayfası Stil */
+.donation-section {
+    margin-top: 60px; /* Navbar için boşluk */
+}
+
+/* Kart ve Buton Stilleri */
+.card {
+    margin-bottom: 20px;
+}
+
+.card-title {
+    font-size: 1.5rem;
+}
+
+#donationSummaryAmount {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #007bff;
+}
+
+#customAmount:disabled {
+    background-color: #f8f9fa;
+}
+
+/* Sticky Sağ Taraf */
+.sticky-top {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 20px;
+}

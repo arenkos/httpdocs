@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-1SW5N2XCDZ"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-1SW5N2XCDZ');
+    </script>
+    <title>AR Yazılım ve Danışmanlık</title>
+    <style>
+        body {
+            background: url('back.png') no-repeat center center fixed;
+            background-size: cover;
+            height: 100vh;
+            width: 100vw;
+            margin: 0;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+        a {
+            text-decoration: none;
+            margin: 10px 0;
+        }
+        .link-div {
+            border-radius: 20px;
+            width:250px;
+            padding: 20px;
+            color: #FFFFFF;
+            font-size:20px;
+            transition: all 0.3s ease;
+        }
+        .link-ar {
+            border: 3px solid #222222;
+            background-color: #222222;
+        }
+        .link-dogus {
+            border: 3px solid #BB2222;
+            background-color: #BB2222;
+        }
+        .link-dogus-duyuru {
+            border: 3px solid #BB2222;
+            background-color: #BB2222;
+        }
+        .link-boss {
+            border: 3px solid #CD0000;
+            background-color: #CD0000;
+        }
+        
+        .link-chopar {
+            border: 3px solid #000000;
+            background-color: #000000;
+        }
+        .link-ar:hover, .link-dogus:hover, .link-dogus-duyuru:hover, .link-boss:hover, .link-chopar:hover {
+            background-color: #F5F5F5;
+            color: #000000;
+        }
+    </style>
+</head>
+<body>
+    <p style="font-size:30px;color:#FFFFFF;">AR Yazılım ve Danışmanlık</p>
+    <a href="armedya/genel_akis.php">
+        <div class="link-div link-ar">AR Haber</div>
+    </a>
+    <a href="dogus/login.php">
+        <div class="link-div link-dogus">Doğuş Üniversitesi</div>
+    </a>
+    <a href="duyuru/duyurular.php">
+        <div class="link-div link-dogus-duyuru">Doğuş Üniversitesi - Duyurular</div>
+    </a>
+    <a href="medyaboss/bossv1.4/ana.php">
+        <div class="link-div link-boss">Medya Boss Haber</div>
+    </a>
+    <a href="chopar/choparv1.0/main.php">
+        <div class="link-div link-chopar">Chopar Kozmetik</div>
+    </a>
+</body>
+</html>
